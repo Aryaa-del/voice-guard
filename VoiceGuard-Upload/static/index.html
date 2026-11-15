@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="Look beyond the sound. Record or upload a voice and explore signs of human and AI-generated speech with VoiceGuard.">
+  <title>VoiceGuard — Look beyond the sound</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css?v=4">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#analyzer">Skip to voice analysis</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="M9 10v4m3-6v8m3-6v4"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 15v5h16v-5"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3m-4 5v2"/></symbol>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/></symbol>
+    <symbol id="wave" viewBox="0 0 24 24"><path d="M3 10v4m4-7v10m5-14v18m5-14v10m4-7v4"/></symbol>
+  </svg>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="VoiceGuard home"><span class="brand-icon"><svg><use href="#shield"/></svg></span>Voice<span>Guard</span><span class="brand-period">.</span></a>
+    <nav aria-label="Main navigation"><a class="nav-link active" href="#analyzer">Voice analyzer</a><a class="nav-link" href="#how-it-works">How it works</a><a class="nav-link" href="#faq">FAQs</a></nav>
+    <a class="header-cta" href="#analyzer">Try VoiceGuard <svg class="icon"><use href="#arrow"/></svg></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> A LITTLE MORE CLARITY. A LITTLE LESS DOUBT.</div>
+        <h1 id="hero-title">Look beyond<br>the <span>sound.</span><svg class="title-spark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0v40M0 20h40M6 6l28 28M6 34 34 6"/></svg></h1>
+        <p>Some voices are human. Some are generated.<br>Get a clearer picture of what you’re hearing.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#analyzer">Analyze a voice <svg class="icon"><use href="#arrow"/></svg></a><a class="hero-secondary" href="#samples"><span class="small-play">▷</span> Explore the samples</a></div>
+        <div class="hero-benefits"><span><svg class="icon"><use href="#check"/></svg> No sign-up</span><span><svg class="icon"><use href="#check"/></svg> No audio archive</span><span><svg class="icon"><use href="#check"/></svg> Record or upload</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb-grid"></div><div class="orbit orbit-outer"></div><div class="orbit orbit-middle"></div><div class="orbit orbit-inner"></div>
+        <span class="orbit-dot dot-one"></span><span class="orbit-dot dot-two"></span>
+        <div class="sound-core"><div class="sound-bars"><i style="--h:20px;--d:0s"></i><i style="--h:39px;--d:.1s"></i><i style="--h:58px;--d:.2s"></i><i style="--h:85px;--d:.3s"></i><i style="--h:112px;--d:.4s"></i><i style="--h:73px;--d:.5s"></i><i style="--h:96px;--d:.6s"></i><i style="--h:55px;--d:.7s"></i><i style="--h:31px;--d:.8s"></i><i style="--h:18px;--d:.9s"></i></div></div>
+        <div class="floating-label label-top"><span class="floating-icon"><svg class="icon"><use href="#shield"/></svg></span><div><small>BEYOND WHAT YOU HEAR</small><strong>A clearer signal.</strong></div><span class="label-dot"></span></div>
+        <div class="floating-label label-bottom"><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i></div><div><small>ONE VOICE. MORE INSIGHT.</small><strong>Human or AI?</strong></div><svg class="icon"><use href="#spark"/></svg></div>
+        <span class="art-caption">EVERY VOICE LEAVES A PATTERN</span>
+      </div>
+    </section>
+    <div class="trust-strip"><span class="trust-title">A SIMPLE WAY TO LISTEN CLOSER</span><span><svg class="icon"><use href="#lock"/></svg> No recordings saved</span><span><svg class="icon"><use href="#wave"/></svg> Human & AI voice analysis</span><span><svg class="icon"><use href="#spark"/></svg> Clear, easy-to-read results</span></div>
+
+    <section id="analyzer" class="analyzer-section" aria-labelledby="analyzer-title">
+      <div class="section-intro"><div><div class="eyebrow">THE VOICE ANALYZER</div><h2 id="analyzer-title">Let your audio do the talking.</h2><p>Upload a recording or speak directly. We’ll take a closer listen.</p></div><span id="model-status" class="service-status" role="status">Checking availability…</span></div>
+      <div class="workspace-grid">
+        <section class="panel input-panel" aria-labelledby="input-title">
+          <div class="panel-heading"><div><span class="step">01</span><h3 id="input-title">Add your audio</h3></div><span class="tiny-label">YOUR VOICE, YOUR CHOICE</span></div>
+          <div id="dropzone" class="dropzone">
+            <div class="upload-icon"><svg><use href="#upload"/></svg></div><h4>Drop it. Check it. Hear it differently.</h4><p>Drag your audio here, or choose a recording.</p>
+            <button type="button" id="browse" class="browse-button">Choose audio <svg class="icon"><use href="#arrow"/></svg></button><input id="file" type="file" accept=".wav,audio/wav,audio/x-wav" hidden>
+            <span class="file-hint">WAV audio · 1–60 seconds · Up to 20 MB</span>
+          </div>
+          <div class="or"><span></span> HAVE SOMETHING TO SAY? <span></span></div>
+          <button id="record" class="record-button"><span class="record-dot"></span> Record your voice <span id="record-time"></span></button>
+          <div id="audio-selection" class="audio-selection" hidden><div class="file-row"><span class="file-icon">♫</span><div><strong id="file-name"></strong><span id="file-size"></span></div><button id="remove" aria-label="Remove selected audio">×</button></div><audio id="player" controls></audio><div id="waveform" class="waveform" aria-hidden="true"></div></div>
+          <div id="error" role="alert" hidden></div>
+          <button id="analyze" class="primary-button" disabled><span>Analyze audio</span><svg class="icon"><use href="#arrow"/></svg></button>
+          <p class="privacy"><svg class="icon"><use href="#lock"/></svg> Audio is sent for analysis; no audio files are saved.</p>
+        </section>
+        <section class="panel result-panel" aria-live="polite" aria-busy="false" id="result-panel" aria-labelledby="analysis-title">
+          <div class="panel-heading"><div><span class="step">02</span><h3 id="analysis-title">The bigger picture</h3></div><span id="result-status" class="tiny-label">WAITING FOR AUDIO</span></div>
+          <div id="empty-result" class="empty-result"><div class="radar"><div class="radar-inner"><svg><use href="#wave"/></svg></div></div><span class="empty-eyebrow">READY WHEN YOU ARE</span><h4>Your next insight starts here.</h4><p>Add a voice recording and discover<br>the signals beneath the sound.</p><div class="result-pills"><span>Human voice</span><span>AI-generated</span><span>Uncertain</span></div></div>
+          <div id="result" hidden></div>
+          <div class="disclaimer"><svg class="icon"><use href="#spark"/></svg><p><strong>A useful perspective, not a final verdict.</strong> Results can be wrong. Use a clear 5–15 second recording and consider the result alongside other information.</p></div>
+        </section>
+      </div>
+    </section>
+
+    <section id="samples" class="samples-section" aria-labelledby="samples-title"><div class="samples-copy"><span class="eyebrow">CURIOUS? START HERE.</span><h2 id="samples-title">Two voices.<br>A different story.</h2><p>Try a sample before bringing your own.</p></div><button data-demo="synthetic" class="sample-card"><span class="sample-type ai-type"><svg class="icon"><use href="#spark"/></svg> AI-GENERATED</span><span class="sample-wave ai-wave" aria-hidden="true">▂ ▅ ▃ ▇ ▄ ▆ ▂ ▄ ▇ ▃ ▅ ▂</span><span class="sample-bottom"><span><strong>The synthetic voice</strong><small>Load an AI speech sample</small></span><span class="sample-arrow">↗</span></span></button><button data-demo="human" class="sample-card"><span class="sample-type human-type"><svg class="icon"><use href="#wave"/></svg> HUMAN VOICE</span><span class="sample-wave human-wave" aria-hidden="true">▃ ▂ ▆ ▄ ▇ ▂ ▅ ▃ ▆ ▂ ▄ ▅</span><span class="sample-bottom"><span><strong>The human voice</strong><small>Load a real speech sample</small></span><span class="sample-arrow">↗</span></span></button></section>
+
+    <section id="history" class="history-section" aria-labelledby="history-title"><div class="section-heading"><div><span class="eyebrow">YOUR RECENT ACTIVITY</span><h2 id="history-title">A look back <span id="history-count">0</span></h2></div><button id="clear-history">Clear history <span aria-hidden="true">↗</span></button></div><div id="history-list" class="history-list"></div><p class="storage-note">Saved in this browser. Only result summaries are kept, never your audio.</p></section>
+
+    <section id="how-it-works" class="how-section" aria-labelledby="how-title"><div class="section-center"><div class="eyebrow">LESS GUESSWORK. MORE UNDERSTANDING.</div><h2 id="how-title">Three steps to a clearer picture.</h2><p>Made to be simple, from the first click.</p></div><div class="how-grid"><article><div class="how-icon"><svg><use href="#upload"/></svg><span>01</span></div><h3>Bring a voice</h3><p>Choose a recording or use your microphone. A short, clear clip is a great place to start.</p></article><article><div class="how-icon"><svg><use href="#wave"/></svg><span>02</span></div><h3>Look a little deeper</h3><p>VoiceGuard checks the recording for patterns associated with human and generated speech.</p></article><article><div class="how-icon"><svg><use href="#spark"/></svg><span>03</span></div><h3>Get some perspective</h3><p>See a likely human, likely AI-generated, or inconclusive result, with a simple breakdown.</p></article></div></section>
+
+    <section class="privacy-banner" id="privacy"><span class="privacy-badge"><svg><use href="#lock"/></svg></span><div><div class="eyebrow">YOUR VOICE IS PERSONAL.</div><h2>Let’s keep it that way.</h2><p>Recordings are analyzed on this computer and aren’t saved by VoiceGuard. You stay in control of your browser’s result history.</p></div><span class="privacy-seal"><span class="status-dot"></span> Private by design</span></section>
+
+    <section id="faq" class="faq-section" aria-labelledby="faq-title"><div class="faq-intro"><div class="eyebrow">GOOD QUESTIONS.</div><h2 id="faq-title">A few things<br>worth knowing.</h2><p>A little context helps you get more from every result.</p></div><div class="faq-list"><details><summary>Can VoiceGuard detect every AI voice?<span>+</span></summary><p>No. Generated voices can be missed, and human speech can be flagged. Treat each result as an estimate, not proof of authenticity.</p></details><details><summary>What makes a good recording?<span>+</span></summary><p>Use 5–15 seconds of clear speech with one speaker and little background noise. You can record here or upload a WAV file up to 60 seconds and 20 MB.</p></details><details><summary>What does “inconclusive” mean?<span>+</span></summary><p>The recording did not produce a clear, consistent prediction. Try a longer, cleaner clip. An uncertain result does not confirm either a human or AI voice.</p></details><details><summary>Do I need an account?<span>+</span></summary><p>No sign-up is needed. Choose a sample, upload speech, or allow microphone access to record directly.</p></details></div></section>
+    <footer class="site-footer"><div class="footer-main"><div><a class="brand" href="#top"><span class="brand-icon"><svg><use href="#shield"/></svg></span>Voice<span>Guard</span><span class="brand-period">.</span></a><p>Make more sense of what you hear.</p></div><div class="footer-links"><a href="#analyzer">Voice analyzer</a><a href="#how-it-works">How it works</a><a href="#privacy">Privacy</a><a href="#faq">FAQs</a></div><a class="back-top" href="#top" aria-label="Back to top">↑</a></div><div class="footer-bottom"><span>© 2026 VoiceGuard. All rights reserved.</span><span class="founder-credit">Founder & Creator <span class="credit-divider">/</span> <strong>Arya Belkar</strong><small>Created by Arya Belkar</small></span><span class="footer-note"><span class="status-dot"></span> Built with care. Made for clarity.</span></div></footer>
+  </main>
+</body>
+</html>

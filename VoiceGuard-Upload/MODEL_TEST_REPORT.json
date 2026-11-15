@@ -1,0 +1,87 @@
+{
+  "model": "Bgeorge/deepfake-audio-detector-wav2vec2",
+  "revision": "7bdcadcb5d47522c0237ef95a97702761fc05baf",
+  "scope": "Bundled example smoke tests only; not a held-out accuracy benchmark.",
+  "samples": [
+    {
+      "file": "ai-voice.wav",
+      "source": "synthetic Windows TTS",
+      "prediction": "Inconclusive",
+      "aiScore": 59.9,
+      "humanScore": 40.1,
+      "segmentScores": [
+        0.2,
+        3.9,
+        100.0,
+        100.0,
+        4.6,
+        80.9,
+        100.0,
+        99.5,
+        9.7,
+        100.0
+      ],
+      "seconds": 14.45,
+      "matchesKnownSource": false
+    },
+    {
+      "file": "everyday-voice.wav",
+      "source": "synthetic Windows TTS",
+      "prediction": "Likely AI-generated voice",
+      "aiScore": 99.9,
+      "humanScore": 0.1,
+      "segmentScores": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        99.7
+      ],
+      "seconds": 1.98,
+      "matchesKnownSource": true
+    },
+    {
+      "file": "neural-voice.wav",
+      "source": "published Kokoro neural TTS",
+      "prediction": "Likely AI-generated voice",
+      "aiScore": 80.0,
+      "humanScore": 20.0,
+      "segmentScores": [
+        100.0,
+        0.3,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "seconds": 0.77,
+      "matchesKnownSource": true
+    },
+    {
+      "file": "human-speech.wav",
+      "source": "public human speech sample",
+      "prediction": "Likely human voice",
+      "aiScore": 10.1,
+      "humanScore": 89.9,
+      "segmentScores": [
+        100.0,
+        0.1,
+        0.2,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.1,
+        0.2,
+        0.2
+      ],
+      "seconds": 1.72,
+      "matchesKnownSource": true
+    }
+  ],
+  "filenameIndependent": true
+}
